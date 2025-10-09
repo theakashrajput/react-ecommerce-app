@@ -24,7 +24,7 @@ export const userPostRegister = async (req, res) => {
 
     res.cookie('token', token, {
         httpOnly: true,
-        sameSite: 'none',
+        sameSite: 'lax',
         secure: false
     });
 
@@ -51,7 +51,7 @@ export const userPostLogin = async (req, res) => {
 
     res.cookie("token", token, {
         httpOnly: true,
-        sameSite: 'none',
+        sameSite: 'lax',
         secure: false
     });
 
