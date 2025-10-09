@@ -5,7 +5,12 @@ const router = express.Router();
 
 router.get('/', userAuthMiddleware, (req, res) => {
     res.status(200).json({
-        message: "Welcome to the Home page"
+        message: "Welcome to the Home page",
+        user: {
+            username: req.user.username,
+            email: req.user.email,
+            id: req.user._id
+        }
     })
 });
 

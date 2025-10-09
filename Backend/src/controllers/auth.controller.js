@@ -3,7 +3,8 @@ import bcrypt from 'bcrypt';
 import dotenv from '../../config/env.config.js';
 import jwt from 'jsonwebtoken';
 
-export const userRegister = async (req, res) => {
+
+export const userPostRegister = async (req, res) => {
 
     const { username, email, password } = req.body;
 
@@ -19,14 +20,16 @@ export const userRegister = async (req, res) => {
         username, email, password: await bcrypt.hash(password, 10)
     });
 
-    console.log(user);
-
     const token = jwt.sign({ id: user._id }, dotenv.JWT_SECRET);
 
-    res.cookie('token', token);
+    res.cookie('token', token, {
+        httpOnly: true,
+        sameSite: 'none',
+        secure: false
+    });
 
     res.status(202).json({
-        message: "User register auccessfully",
+        message: "User register successfully",
         user: {
             username: user.username,
             email: user.email,
@@ -35,7 +38,7 @@ export const userRegister = async (req, res) => {
     })
 };
 
-export const userLogin = async (req, res) => {
+export const userPostLogin = async (req, res) => {
     const { email, password } = req.body;
 
     const user = await userModel.findOne({ email: email });
@@ -46,16 +49,20 @@ export const userLogin = async (req, res) => {
 
     const token = jwt.sign({ id: user._id }, dotenv.JWT_SECRET);
 
-    res.cookie("token", token);
+    res.cookie("token", token, {
+        httpOnly: true,
+        sameSite: 'none',
+        secure: false
+    });
 
     res.status(200).json({
         message: "User logged in successfully"
     })
 };
 
-export const userLogout = (req, res) => {
+export const userPostLogout = (req, res) => {
     res.clearCookie('token');
     res.status(200).json({
         message: "Use logout successfully"
     });
-}
+};

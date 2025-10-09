@@ -6,7 +6,7 @@ export const userAuthMiddleware = async (req, res, next) => {
 
     try {
         const { token } = req.cookies;
-
+        
         if (!token) return res.status(409).json({
             message: "Invalid credentials"
         });

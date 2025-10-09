@@ -1,16 +1,21 @@
 import { useEffect } from "react";
-import { asyncGetUsers } from "./store/actions/UserAction";
+import { asyncGetUser } from "./store/actions/UserAction";
 import { useDispatch, useSelector } from "react-redux";
+import MainRoutes from "./routes/MainRoutes";
 
 const App = () => {
   const data = useSelector((state) => state);
   const dispatch = useDispatch();
   console.log(data);
   useEffect(() => {
-    dispatch(asyncGetUsers());
+    dispatch(asyncGetUser());
   }, []);
 
-  return <div>App</div>;
+  return (
+    <div>
+      <MainRoutes />
+    </div>
+  );
 };
 
 export default App;
