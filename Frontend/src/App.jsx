@@ -13,7 +13,7 @@ const App = () => {
   }, []); 
 
   return (
-    <div className="w-full h-screen relative">
+    <div className="w-full h-screen relative font-[poppins]">
       <Nav />
       <MainRoutes />
     </div>

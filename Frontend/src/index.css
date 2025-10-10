@@ -43,3 +43,7 @@
 .nav-underline:hover .nav-underline-text::after{
   width: 100%;
 }
+
+.scrollbar-container::-webkit-scrollbar{
+  display: none;
+}

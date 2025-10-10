@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef();
-
+console.log(menuOpen);
   const menuItems = ["Shop", "New Arrivals", "Register", "Login"];
 
   // Toggle menu open/close
