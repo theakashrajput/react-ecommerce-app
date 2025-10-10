@@ -4,7 +4,8 @@ import { Link, NavLink } from "react-router-dom";
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef();
-console.log(menuOpen);
+  const menuIconRef = useRef(); // Add this ref
+
   const menuItems = ["Shop", "New Arrivals", "Register", "Login"];
 
   // Toggle menu open/close
@@ -17,7 +18,13 @@ console.log(menuOpen);
   useEffect(() => {
     if (!menuOpen) return;
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      // Ignore clicks on the menu icon
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        menuIconRef.current &&
+        !menuIconRef.current.contains(event.target)
+      ) {
         setMenuOpen(false);
       }
     };
@@ -33,6 +40,7 @@ console.log(menuOpen);
       <nav className="w-full absolute top-0 left-0 bg-[#fff] text-[#000] flex justify-between items-center py-5 px-4 z-10 md:px-8 xl:px-16">
         <div className="flex items-center">
           <i
+            ref={menuIconRef} // Attach ref here
             onClick={handleMenuToggle}
             className="ri-menu-line text-xl font-semibold md:hidden cursor-pointer"
           ></i>

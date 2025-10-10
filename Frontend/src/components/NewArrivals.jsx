@@ -26,7 +26,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -37,7 +36,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -48,7 +46,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -59,7 +56,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -70,7 +66,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 536 512"
                   height="1em"
                   width="1em"
@@ -102,7 +97,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -113,7 +107,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -124,7 +117,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -135,7 +127,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -146,7 +137,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 536 512"
                   height="1em"
                   width="1em"
@@ -178,7 +168,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -189,7 +178,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -200,7 +188,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -211,7 +198,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -222,7 +208,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 536 512"
                   height="1em"
                   width="1em"
@@ -254,7 +239,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -265,7 +249,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -276,7 +259,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -287,7 +269,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 576 512"
                   height="1em"
                   width="1em"
@@ -298,7 +279,6 @@ const NewArrivals = () => {
                 <svg
                   stroke="currentColor"
                   fill="yellow"
-                  stroke-width="0"
                   viewBox="0 0 536 512"
                   height="1em"
                   width="1em"
@@ -315,7 +295,7 @@ const NewArrivals = () => {
           </div>
         </div>
       </div>
-      <button className="w-[95%] bg-trasparent text-[#000] rounded-3xl py-3 text-base mt-5 border-[1px] border-[#A2A0A1] cursor-pointer active:scale-95">
+      <button className="w-[95%] bg-transparent text-[#000] rounded-3xl py-3 text-base mt-5 border-[1px] border-[#A2A0A1] cursor-pointer active:scale-95">
         View All
       </button>
       <hr className="text-[#A2A0A1] mt-5 w-[95%]" />
