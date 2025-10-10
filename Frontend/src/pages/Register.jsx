@@ -27,7 +27,7 @@ const Register = () => {
     <div className="h-screen w-full flex justify-center items-center flex-col gap-3 bg-[#ffffff]">
       <form
         onSubmit={handleSubmit(formSubmitHandler)}
-        className="w-[90%] flex flex-col gap-6 rounded px-5 py-3 font-[poppins]"
+        className="w-[90%] sm:w-[60%] lg:w-[30%] flex flex-col gap-6 rounded px-5 py-3 font-[poppins]"
       >
         <h1 className="text-3xl text-center font-semibold font-[gilroy] mb-3">
           Registe Form
