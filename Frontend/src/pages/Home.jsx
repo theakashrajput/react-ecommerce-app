@@ -1,3 +1,4 @@
+import CategoryCardSec from "../components/CategoryCardSec";
 import HeroSection from "../components/HeroSection";
 import NewArrivals from "../components/NewArrivals";
 import Scroller from "../components/Scroller";
@@ -10,6 +11,7 @@ const Home = () => {
       <Scroller />
       <NewArrivals />
       <TopSelling />
+      <CategoryCardSec />
     </div>
   );
 };
