@@ -35,7 +35,7 @@ const Card = ({ data }) => {
             <svg
               key={idx}
               stroke="currentColor"
-              fill="yellow"
+              fill="#ffc734"
               viewBox="0 0 576 512"
               height="1em"
               width="1em"
@@ -50,7 +50,7 @@ const Card = ({ data }) => {
             <svg
               key={idx}
               stroke="currentColor"
-              fill="yellow"
+              fill="#ffc734"
               viewBox="0 0 536 512"
               height="1em"
               width="1em"

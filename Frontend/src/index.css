@@ -47,3 +47,10 @@
 .scrollbar-container::-webkit-scrollbar{
   display: none;
 }
+
+.scroll-snap-x {
+  scroll-snap-type: x mandatory;
+}
+.scroll-snap-child {
+  scroll-snap-align: start;
+}
