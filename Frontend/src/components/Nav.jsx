@@ -49,7 +49,7 @@ const Nav = () => {
             <Link to="/">SHOP.CO</Link>
           </h2>
 
-          <div className="hidden md:flex lg:gap-5 gap-3 items-center lg:text-base text-sm lg:ml-12 md:ml-8">
+          <div className="hidden md:flex xl:gap-5 gap-3 items-center lg:text-base text-sm lg:ml-10 xl:ml-12 md:ml-8">
             {menuItems.map((item) => (
               <NavLink
                 key={item}
@@ -60,7 +60,7 @@ const Nav = () => {
               >
                 <span className="nav-underline-text">{item}</span>
               </NavLink>
-            ))}
+            ))} 
           </div>
         </div>
 
@@ -70,7 +70,7 @@ const Nav = () => {
             <i className="ri-search-line lg:text-xl text-sm text-[#A3A3A3]"></i>
             <input
               type="text"
-              className="inline-block w-[90%] lg:text-base outline-none lg:ml-3 ml-1 bg-transparent"
+              className="inline-block w-[85%] lg:text-base outline-none lg:ml-3 ml-1 bg-transparent"
               placeholder="Search for products..."
             />
           </div>

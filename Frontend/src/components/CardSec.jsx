@@ -31,7 +31,7 @@ const CardSec = () => {
   ];
 
   return (
-    <div id="card-container" className="flex items-start gap-4 min-w-max">
+    <div id="card-container" className="flex items-start justify-between gap-4 lg:gap-8 min-w-max lg:max-w-lg lg:mx-auto">
       {cardData.map((ele, idx) => (
         <Card key={idx} data={ele} />
       ))}

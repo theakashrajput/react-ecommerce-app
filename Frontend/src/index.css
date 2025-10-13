@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
-/* Fix search bar breaking between 795px and 797px */
-@media (min-width: 768px) and (max-width: 795px) {
+
+/* Fix Nav section search bar breaking between 795px and 797px */
+@media (min-width: 767px) and (max-width: 795px) {
   .search-bar-fix {
-    width: 70% !important;
-    min-width: 200px;
+    width: 60% !important;
   }
 }
 
@@ -15,6 +15,29 @@
     letter-spacing: 0.01em;
   }
 }
+
+/* For Hero Section Hero Text */
+
+@media (min-width: 1440px) {
+  .hero-text {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 370px) {
+  .hero-text {
+    font-size: 2.2rem;
+  }  
+}
+
+
+/* For Home Page Scroll Section */
+@media (min-width: 1024px) {
+  .home-page-logo-sec {
+      grid-template-columns: 1fr 1fr 1fr 2fr; 
+  }
+}
+
 
 /* Underline animation for nav links */
 .nav-underline {

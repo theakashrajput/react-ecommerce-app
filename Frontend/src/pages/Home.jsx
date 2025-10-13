@@ -8,7 +8,7 @@ import TopSelling from "../components/TopSelling";
 
 const Home = () => {
   return (
-    <div className="h-screen w-full bg-[#fff] text-[#000] pt-20">
+    <div className="h-screen w-full bg-[#fff] text-[#000] pt-18">
       <HeroSection />
       <Scroller />
       <NewArrivals />

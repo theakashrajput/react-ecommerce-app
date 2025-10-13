@@ -6,33 +6,33 @@ const Card = ({ data }) => {
 
   const handleStarRating = (rating) => {
     if (rating % 1 == 0.5) {
-        halfStar++
-        wholeStar = rating - 0.5;
+      halfStar++;
+      wholeStar = rating - 0.5;
     } else {
-        wholeStar = rating;
-    };
+      wholeStar = rating;
+    }
   };
 
   handleStarRating(data.productRating);
 
   return (
-    <div className="card w-56 rounded-2xl overflow-hidden pb-2 flex-shrink-0">
-      <div className="card-img bg-[#F0EFED] w-full h-60 rounded-2xl">
+    <div className="card w-56 lg:w-60 xl:w-64 rounded-2xl overflow-hidden cursor-pointer pb-2 flex-shrink-0 hover:scale-105 transition-transform duration-300 ease-in-out">
+      <div className="card-img bg-[#F0EFED] w-full h-60 rounded-2xl overflow-hidden">
         <img
           src={data.image}
           alt="Product Image"
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="card-det pt-2 whitespace-normal">
-        <div className="card-title mb-1">
+      <div className="card-det pt-2 lg:pt-3 xl:pt-4 whitespace-normal">
+        <div className="card-title mb-1 lg:text-xl xl:text-2xl">
           <h4>{data.productTitle}</h4>
         </div>
-        <div className="card-rating flex mb-1">
-
+        <div className="card-rating flex mb-1 lg:mb-3 lg:my-2">
           {/* Whole Star */}
           {Array.from({ length: wholeStar }).map((_, idx) => (
             <svg
+              className="lg:text-lg"
               key={idx}
               stroke="currentColor"
               fill="#ffc734"
@@ -49,6 +49,7 @@ const Card = ({ data }) => {
           {Array.from({ length: halfStar }).map((_, idx) => (
             <svg
               key={idx}
+              className="lg:text-lg"
               stroke="currentColor"
               fill="#ffc734"
               viewBox="0 0 536 512"
@@ -60,9 +61,11 @@ const Card = ({ data }) => {
             </svg>
           ))}
 
-          <small className="ml-1">{data.productRating}/5</small>
+          <small className="ml-1 lg:ml-2 lg:text-sm">
+            {data.productRating}/5
+          </small>
         </div>
-        <div className="card-price font-semibold font-[Gilroy] text-xl">
+        <div className="card-price font-semibold font-[Gilroy] text-xl lg:text-2xl">
           ${data.productPrice}
         </div>
       </div>
