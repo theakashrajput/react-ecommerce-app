@@ -77,3 +77,74 @@
 .scroll-snap-child {
   scroll-snap-align: start;
 }
+
+/* For filter price bar */
+
+.range-slider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000; /* Tailwind's gray-200 */
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.range-slider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000; /* Tailwind's gray-200 */
+  transform: translateY(-50%) translateX(-100%);
+  z-index: 5;
+}
+
+
+.slider-input {
+  /* Common styles for both inputs */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-appearance: none; /* Hides the default slider look in Chrome/Safari */
+  -moz-appearance: none;    /* Hides the default slider look in Firefox */
+  appearance: none;
+  background: transparent;  /* Makes the slider track transparent */
+  pointer-events: auto;     /* Allows interaction with the input */
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+/* Removes default focus outline */
+.slider-input:focus {
+  outline: none;
+}
+
+/* Custom thumb styling for WebKit browsers (Chrome, Safari) */
+.slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;          /* Width of the thumb */
+  height: 16px;         /* Height of the thumb */
+  background: black;    /* Thumb color */
+  border-radius: 50%;   /* Makes it a circle */
+  cursor: pointer;      /* Pointer cursor on hover */
+  margin-top: -1px;     /* Small adjustment to center it on the track */
+}
+
+/* Custom thumb styling for Firefox */
+.slider-input::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none; /* Firefox might add a border */
+}
