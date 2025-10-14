@@ -111,7 +111,7 @@ const Register = () => {
       <p className="text-sm tracking-wide">
         Already have an account?
         <Link
-          className="text-blue-400 ml-0.5 font-semibold hover:underline"
+          className="text-blue-400 ml-0.5 hover:underline"
           to="/login"
         >
           Login

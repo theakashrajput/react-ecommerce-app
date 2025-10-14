@@ -33,11 +33,16 @@ const Nav = () => {
   }, [menuOpen]);
 
   // Format name for URL (replace spaces with hyphens)
-  const formatPath = (name) => `/${name.toLowerCase().replace(/\s+/g, "-")}`;
+  const formatPath = (name) => {
+    if (name.toLowerCase() === "shop") {
+      return `/products`;
+    }
+    return `/${name.toLowerCase().replace(/\s+/g, "-")}`;
+  };
 
   return (
     <>
-      <nav className="w-full absolute top-0 left-0 bg-[#fff] text-[#000] flex justify-between items-center py-5 px-4 z-10 md:px-8 xl:px-16">
+      <nav className="w-full absolute top-0 left-0 bg-[#fff] text-[#000] flex justify-between items-center py-5 px-4 z-30 md:px-8 xl:px-16 border-b-2 border-[#a2ada1]/40">
         <div className="flex items-center">
           <i
             ref={menuIconRef} // Attach ref here
@@ -53,14 +58,14 @@ const Nav = () => {
             {menuItems.map((item) => (
               <NavLink
                 key={item}
-                to={formatPath(item)}
+                to={formatPath(item)} 
                 className={({ isActive }) =>
                   `nav-underline ${isActive ? "text-[#454545]" : "text-[#000]"}`
                 }
               >
                 <span className="nav-underline-text">{item}</span>
               </NavLink>
-            ))} 
+            ))}
           </div>
         </div>
 
@@ -82,7 +87,7 @@ const Nav = () => {
       {/* Mobile menu */}
       <div
         ref={menuRef}
-        className={`w-full bg-[#fff] flex flex-col gap-3 pt-2 pb-3 px-1 absolute left-0 duration-500 ease-out ${
+        className={`w-full bg-[#fff] flex flex-col gap-3 pt-2 pb-3 px-1 absolute z-20 left-0 duration-500 ease-out ${
           menuOpen ? "top-16" : "-top-48"
         }`}
       >
