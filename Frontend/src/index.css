@@ -27,14 +27,14 @@
 @media (min-width: 300px) and (max-width: 370px) {
   .hero-text {
     font-size: 2.2rem;
-  }  
+  }
 }
 
 
 /* For Home Page Scroll Section */
 @media (min-width: 1024px) {
   .home-page-logo-sec {
-      grid-template-columns: 1fr 1fr 1fr 2fr; 
+    grid-template-columns: 1fr 1fr 1fr 2fr;
   }
 }
 
@@ -63,17 +63,18 @@
   z-index: 0;
 }
 
-.nav-underline:hover .nav-underline-text::after{
+.nav-underline:hover .nav-underline-text::after {
   width: 100%;
 }
 
-.scrollbar-container::-webkit-scrollbar{
+.scrollbar-container::-webkit-scrollbar {
   display: none;
 }
 
 .scroll-snap-x {
   scroll-snap-type: x mandatory;
 }
+
 .scroll-snap-child {
   scroll-snap-align: start;
 }
@@ -88,7 +89,8 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #000; /* Tailwind's gray-200 */
+  background-color: #000;
+  /* Tailwind's gray-200 */
   transform: translateY(-50%);
   z-index: 5;
 }
@@ -101,7 +103,8 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #000; /* Tailwind's gray-200 */
+  background-color: #000;
+  /* Tailwind's gray-200 */
   transform: translateY(-50%) translateX(-100%);
   z-index: 5;
 }
@@ -113,11 +116,15 @@
   top: 50%;
   left: 0;
   width: 100%;
-  -webkit-appearance: none; /* Hides the default slider look in Chrome/Safari */
-  -moz-appearance: none;    /* Hides the default slider look in Firefox */
+  -webkit-appearance: none;
+  /* Hides the default slider look in Chrome/Safari */
+  -moz-appearance: none;
+  /* Hides the default slider look in Firefox */
   appearance: none;
-  background: transparent;  /* Makes the slider track transparent */
-  pointer-events: auto;     /* Allows interaction with the input */
+  background: transparent;
+  /* Makes the slider track transparent */
+  pointer-events: auto;
+  /* Allows interaction with the input */
   transform: translateY(-50%);
   margin: 0;
 }
@@ -131,12 +138,19 @@
 .slider-input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 16px;          /* Width of the thumb */
-  height: 16px;         /* Height of the thumb */
-  background: black;    /* Thumb color */
-  border-radius: 50%;   /* Makes it a circle */
-  cursor: pointer;      /* Pointer cursor on hover */
-  margin-top: -1px;     /* Small adjustment to center it on the track */
+  width: 16px;
+  /* Width of the thumb */
+  height: 16px;
+  /* Height of the thumb */
+  background: black;
+  /* Thumb color */
+  border-radius: 50%;
+  /* Makes it a circle */
+  pointer-events: auto;
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  margin-top: -1px;
+  /* Small adjustment to center it on the track */
 }
 
 /* Custom thumb styling for Firefox */
@@ -146,5 +160,6 @@
   background: black;
   border-radius: 50%;
   cursor: pointer;
-  border: none; /* Firefox might add a border */
+  border: none;
+  /* Firefox might add a border */
 }
