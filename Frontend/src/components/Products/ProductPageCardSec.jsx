@@ -181,7 +181,7 @@ const ProductPageCardSec = () => {
 
   // Pagination Logic
 
-  let cardData = Array(110).fill({
+  let cardData = Array(113).fill({
   image: product1,
   productTitle: "Product 1",
   productRating: 4,

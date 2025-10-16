@@ -6,7 +6,7 @@ const Nav = () => {
   const menuRef = useRef();
   const menuIconRef = useRef(); // Add this ref
 
-  const menuItems = ["Shop", "New Arrivals", "Register", "Login"];
+  const menuItems = ["Shop", "Cart", "Register", "Login"];
 
   // Toggle menu open/close
   const handleMenuToggle = (e) => {
