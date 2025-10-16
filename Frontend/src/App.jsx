@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { asyncGetUser } from "./store/actions/UserAction";
 import { useDispatch, useSelector } from "react-redux";
 import MainRoutes from "./routes/MainRoutes";
-import Nav from "./components/Nav";
+import Nav from "./components/common/Nav";
 
 const App = () => {
   const data = useSelector((state) => state);

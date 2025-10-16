@@ -163,3 +163,7 @@
   border: none;
   /* Firefox might add a border */
 }
+
+.user-select::selection {
+  background: transparent;
+}

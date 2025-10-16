@@ -1,7 +1,10 @@
-import myImage from "../asset/hero.jpg";
-import starPng from "../asset/star.png";
+import { useNavigate } from "react-router-dom";
+import myImage from "../../asset/hero.jpg";
+import starPng from "../../asset/star.png";
 
 const HeroSection = () => {
+  const navigation = useNavigate();
+
   return (
     <section className="bg-[#F2F0F1] pt-10 px-3 flex flex-col lg:flex-row md:px-10 xl:gap-20 lg:justify-between">
       <div className="lg:w-[50%] md:pt-10 lg:pt-5 px-5 flex flex-col items-center lg:items-start">
@@ -13,7 +16,9 @@ const HeroSection = () => {
           designed to bring out your individually and cater to your sense of
           style.
         </p>
-        <button className="w-full md:max-w-lg lg:max-w-[50%] xl:max-w-[40%] bg-[#000] text-[#C7C7C7] rounded-4xl py-3 md:text-lg mt-7 md:mt-10 xl:mt-8 active:scale-95">
+        <button 
+        onClick={()=>navigation('/products')}
+        className="w-full md:max-w-lg lg:max-w-[50%] cursor-pointer xl:max-w-[40%] bg-[#000] text-[#C7C7C7] rounded-4xl py-3 md:text-lg mt-7 md:mt-10 xl:mt-8 active:scale-95">
           Shop Now
         </button>
         <div className="w-full grid mt-7 md:mt-15 lg:mt-10 px-5 gap-3 lg:gap-0 grid-cols-2 lg:grid-cols-3 xl:items-center lg:items-baseline place-items-center">

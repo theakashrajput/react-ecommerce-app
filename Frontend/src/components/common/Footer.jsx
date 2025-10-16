@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import FooterPaymentLogos from "../asset/Footer Payment Methods Logos.png";
+import FooterPaymentLogos from "../../asset/Footer Payment Methods Logos.png";
 
 const Footer = () => {
   const {
@@ -141,12 +141,12 @@ const Footer = () => {
           </div>
         </div>
         <hr className="w-full h-0.5 mb-5 text-[#A2A0A1] opacity-50" />
-        <div className="copyright flex flex-col items-center gap-4">
+        <div className="copyright flex flex-col lg:flex-row lg:justify-between items-center gap-4">
           <h6 className="text-[#848484] text-xs md:text-sm text-center">
             Shop.co © 2025, All design right to
-            <span>hamzanaeem778@gmail.com</span>
+            <span className="lg:ml-1 inline-block">hamzanaeem778@gmail.com</span>
           </h6>
-          <div className="w-[70%] md:w-[60%] lg:w-[30%] 2xl:w-[22%] md:mt-5">
+          <div className="w-[70%] md:w-[60%] lg:w-[30%] 2xl:w-[22%] md:mt-5 lg:mt-2">
             <img
               src={FooterPaymentLogos}
               alt="Payment logos image"

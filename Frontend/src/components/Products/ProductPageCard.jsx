@@ -14,7 +14,7 @@ const ProductPageCard = ({ data }) => {
   handleStarRating(data.productRating);
 
   return (
-    <div className="card w-full lg:w-60 xl:w-64 rounded-2xl overflow-hidden cursor-pointer pb-2 flex-shrink-0 hover:scale-105 transition-transform duration-300 ease-in-out">
+    <div className="card w-full rounded-2xl overflow-hidden cursor-pointer pb-2 flex-shrink-0 hover:scale-105 transition-transform duration-300 ease-in-out">
       <div className="card-img bg-[#F0EFED] w-full aspect-square rounded-2xl overflow-hidden">
         <img
           src={data.image}

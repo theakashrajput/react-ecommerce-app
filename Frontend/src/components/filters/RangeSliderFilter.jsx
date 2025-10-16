@@ -49,7 +49,7 @@ export default function PriceRange() {
           style={{ left: `calc(${(min / range.max) * 100}% - 10px)` }}
           onMouseDown={() => handleMouseDown("min")}
         >
-          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white text-black px-2 py-1 text-sm font-medium">
+          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white text-black px-2 py-1 text-sm font-medium user-select">
             ${min}
           </span>
         </div>
@@ -60,7 +60,7 @@ export default function PriceRange() {
           style={{ left: `calc(${(max / range.max) * 100}% - 10px)` }}
           onMouseDown={() => handleMouseDown("max")}
         >
-          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white text-black px-2 py-1 text-sm font-medium">
+          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white text-black px-2 py-1 text-sm font-medium user-select">
             ${max}
           </span>
         </div>

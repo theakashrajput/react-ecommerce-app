@@ -1,8 +1,8 @@
-import partner1 from "../asset/partner1.png";
-import partner2 from "../asset/partner2.png";
-import partner3 from "../asset/partner3.png";
-import partner4 from "../asset/partner4.png";
-import partner5 from "../asset/partner5.png";
+import partner1 from "../../asset/partner1.png";
+import partner2 from "../../asset/partner2.png";
+import partner3 from "../../asset/partner3.png";
+import partner4 from "../../asset/partner4.png";
+import partner5 from "../../asset/partner5.png";
 
 const Scroller = () => {
   return (

@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "../index.css";
+import "../../index.css";
 
 const HomeReviewSec = () => {
   const scrollRef = useRef(null);

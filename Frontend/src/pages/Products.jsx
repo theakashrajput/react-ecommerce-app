@@ -1,7 +1,6 @@
-import React from 'react'
-import BreadCrumbs from '../components/BreadCrumbs'
-import ProductPageCardSec from '../components/ProductPageCardSec'
-import Footer from '../components/Footer'
+import BreadCrumbs from '../components/common/BreadCrumbs'
+import ProductPageCardSec from '../components/Products/ProductPageCardSec'
+import Footer from '../components/common/Footer'
 
 const Products = () => {
 

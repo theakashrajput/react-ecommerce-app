@@ -1,7 +1,7 @@
-import FormalImg from "../asset/Formal.jpg";
-import CasualImg from "../asset/Casual.jpg";
-import GymImg from "../asset/Gym.jpg";
-import PartyImg from "../asset/Party.jpg";
+import FormalImg from "../../asset/Formal.jpg";
+import CasualImg from "../../asset/Casual.jpg";
+import GymImg from "../../asset/Gym.jpg";
+import PartyImg from "../../asset/Party.jpg";
 
 const CategoryCardSec = () => {
   const categoryCardData = [

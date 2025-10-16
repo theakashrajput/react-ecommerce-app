@@ -1,10 +1,10 @@
-import CategoryCardSec from "../components/CategoryCardSec";
-import Footer from "../components/Footer";
-import HeroSection from "../components/HeroSection";
-import HomeReviewSec from "../components/HomeReviewSec";
-import NewArrivals from "../components/NewArrivals";
-import Scroller from "../components/Scroller";
-import TopSelling from "../components/TopSelling";
+import CategoryCardSec from "../components/Home/CategoryCardSec";
+import Footer from "../components/common/Footer";
+import HeroSection from "../components/Home/HeroSection";
+import HomeReviewSec from "../components/Home/HomeReviewSec";
+import NewArrivals from "../components/Home/NewArrivals";
+import Scroller from "../components/Home/Scroller";
+import TopSelling from "../components/Home/TopSelling";
 
 const Home = () => {
   return (

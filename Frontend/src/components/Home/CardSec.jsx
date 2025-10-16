@@ -1,4 +1,4 @@
-import product1 from "../asset/product1.png";
+import product1 from "../../asset/product1.png";
 import Card from "./Card";
 
 const CardSec = () => {

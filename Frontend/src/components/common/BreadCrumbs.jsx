@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const BreadCrumbs = ({ items }) => {
   return (
-    <div
+    <section
       aria-label="breadcrumb"
       className="w-full text-sm md:text-base py-2 px-4 md:py-1 md:px-4"
     >
@@ -12,7 +12,7 @@ const BreadCrumbs = ({ items }) => {
           return (
             <li key={idx} className="breadcrumb-item flex items-center">
               {!isLast ? (
-                <Link to={ele.path} className="text-[#333] nav-underline">
+                <Link to={ele.path} className="text-blue-500 nav-underline">
                   <span className="nav-underline-text">{ele.label}</span>
                 </Link>
               ) : (
@@ -27,7 +27,7 @@ const BreadCrumbs = ({ items }) => {
           );
         })}
       </ol>
-    </div>
+    </section>
   );
 };
 
